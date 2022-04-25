@@ -1,0 +1,63 @@
+[2021-12-10 11:25:13,932] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/user/info?token=fe3dba4fec7d750350ada0c25e9740e5 HTTP/1.1" 200 239
+[2021-12-10 11:31:52,507] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/user/info?token=fe3dba4fec7d750350ada0c25e9740e5 HTTP/1.1" 200 239
+[2021-12-10 16:41:39,142] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/monior/getpiecharts HTTP/1.1" 200 672
+[2021-12-10 16:41:39,156] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/monior/gethistory HTTP/1.1" 200 138
+[2021-12-10 16:41:40,018] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/monior/DayPassFail?type=LineChart HTTP/1.1" 200 1019
+[2021-12-10 16:41:40,186] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/monior/ruledistribution?table_schema=nczbigdata HTTP/1.1" 200 36007
+[2021-12-10 16:41:44,863] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 16:41:44,866] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 16:41:44,866] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestioninfo():
+[2021-12-10 16:41:44,867] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getPrjUserinfo():
+[2021-12-10 16:41:44,867] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 16:41:44,868] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 16:41:44,888] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 16:41:44,890] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 16:41:44,975] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/tablecheck/getquestioninfo HTTP/1.1" 200 8074
+[2021-12-10 16:41:44,976] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getPrjUserinfo HTTP/1.1" 200 4491
+[2021-12-10 18:41:48,051] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/user/info?token=fe3dba4fec7d750350ada0c25e9740e5 HTTP/1.1" 200 239
+[2021-12-10 18:41:48,547] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:41:48,556] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:41:48,557] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getPrjUserinfo():
+[2021-12-10 18:41:48,558] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestioninfo():
+[2021-12-10 18:41:48,558] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:41:48,560] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:41:48,589] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:41:48,593] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:41:48,679] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getPrjUserinfo HTTP/1.1" 200 4491
+[2021-12-10 18:41:48,699] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/tablecheck/getquestioninfo HTTP/1.1" 200 8074
+[2021-12-10 18:41:49,823] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:41:49,824] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestioninfo():
+[2021-12-10 18:41:49,825] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:41:49,835] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:41:49,863] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/tablecheck/getquestioninfo HTTP/1.1" 200 8074
+[2021-12-10 18:42:37,710] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:42:37,711] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestionhistory():
+[2021-12-10 18:42:37,713] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:42:37,727] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:42:37,745] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:42:37,746] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestionrepeatSteps():
+[2021-12-10 18:42:37,749] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:42:37,753] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getquestionhistory?id=86a8712428af1b461dcfa76c529ef75a HTTP/1.1" 200 636
+[2021-12-10 18:42:37,784] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:42:37,791] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getquestionrepeatSteps?id=86a8712428af1b461dcfa76c529ef75a HTTP/1.1" 200 1154
+[2021-12-10 18:42:43,675] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:42:43,682] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:42:43,682] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestionhistory():
+[2021-12-10 18:42:43,683] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestionrepeatSteps():
+[2021-12-10 18:42:43,688] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:42:43,692] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:42:43,731] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:42:43,738] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:42:43,747] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getquestionhistory?id=361027b13e35fb27a21e13529671f734 HTTP/1.1" 200 81
+[2021-12-10 18:42:43,758] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getquestionrepeatSteps?id=361027b13e35fb27a21e13529671f734 HTTP/1.1" 200 463984
+[2021-12-10 18:51:18,488] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/user/info?token=fe3dba4fec7d750350ada0c25e9740e5 HTTP/1.1" 200 239
+[2021-12-10 18:51:18,945] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:51:18,949] [RequestDecorator.py:15] [RequestDecorator:interceptToken] [INFO]- 检查request中是否包含token和userId
+[2021-12-10 18:51:18,950] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getquestioninfo():
+[2021-12-10 18:51:18,951] [RequestDecorator.py:16] [RequestDecorator:interceptToken] [INFO]- 执行的请求为getPrjUserinfo():
+[2021-12-10 18:51:18,951] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:51:18,952] [RequestDecorator.py:20] [RequestDecorator:interceptToken] [INFO]- 获取数据库中存在的token
+[2021-12-10 18:51:18,975] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:51:18,982] [RequestDecorator.py:34] [RequestDecorator:interceptToken] [INFO]- 两个token一致
+[2021-12-10 18:51:19,039] [basehttp.py:154] [basehttp:log_message] [INFO]- "GET /v1/api/tablecheck/getPrjUserinfo HTTP/1.1" 200 4491
+[2021-12-10 18:51:19,058] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/tablecheck/getquestioninfo HTTP/1.1" 200 8075

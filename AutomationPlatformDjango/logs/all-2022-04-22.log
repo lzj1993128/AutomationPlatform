@@ -1,0 +1,48 @@
+[2022-04-22 17:22:50,188] [log.py:222] [log:log_response] [ERROR]- Internal Server Error: /v1/api/login
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\python\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: api_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\project\AutomationPlatformDjango\api\views\login\LoginView.py", line 51, in login
+    if user:
+  File "D:\python\lib\site-packages\django\db\models\query.py", line 272, in __bool__
+    self._fetch_all()
+  File "D:\python\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\python\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\python\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\python\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\python\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\python\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\python\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\python\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: api_user
+[2022-04-22 17:22:50,197] [basehttp.py:154] [basehttp:log_message] [ERROR]- "POST /v1/api/login HTTP/1.1" 500 27
+[2022-04-22 17:26:57,130] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/login HTTP/1.1" 200 76
+[2022-04-22 17:28:17,168] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/login HTTP/1.1" 200 76
+[2022-04-22 17:28:18,199] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /v1/api/login HTTP/1.1" 200 76

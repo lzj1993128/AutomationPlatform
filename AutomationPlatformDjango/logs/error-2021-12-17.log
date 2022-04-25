@@ -1,0 +1,30 @@
+[2021-12-17 17:35:15,945] [DataMoniorView.py:1100] [DataMoniorView:job_listener] [ERROR]- jobname=five_minute_job|jobtrigger=cron[day_of_week='mon-fri', hour='9-18', minute='*/5']|errcode=8192|exception=[SDK.HttpError HTTPSConnectionPool(host='foas.cn-shanghai.aliyuncs.com', port=443): Read timed out.]|traceback=[  File "D:\Python36\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\project\AutomationPlatformDjango\data_monior\views\datamonior\DataMoniorView.py", line 1041, in five_minute_job
+    blink.run(webhook=webhook, at_mobiles=at_mobiles)
+  File "D:\project\AutomationPlatformDjango\data_monior\dataworksTableCheck\servers\blink_RT_Task.py", line 166, in run
+    jobNameList = self.listinstance()
+  File "D:\project\AutomationPlatformDjango\data_monior\dataworksTableCheck\servers\blink_RT_Task.py", line 99, in listinstance
+    response = self.client.do_action_with_exception(request)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 497, in do_action_with_exception
+    status, headers, body, exception = self._implementation_of_do_action(acs_request)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 332, in _implementation_of_do_action
+    return self._handle_retry_and_timeout(endpoint, request, signer)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 417, in _handle_retry_and_timeout
+    raise exception
+]|scheduled_time=2021-12-17 17:35:00+08:00
+[2021-12-20 09:40:12,249] [DataMoniorView.py:1100] [DataMoniorView:job_listener] [ERROR]- jobname=five_minute_job|jobtrigger=cron[day_of_week='mon-fri', hour='9-18', minute='*/5']|errcode=8192|exception=[SDK.HttpError HTTPSConnectionPool(host='foas.cn-shanghai.aliyuncs.com', port=443): Read timed out.]|traceback=[  File "D:\Python36\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "D:\project\AutomationPlatformDjango\data_monior\views\datamonior\DataMoniorView.py", line 1041, in five_minute_job
+    blink.run(webhook=webhook, at_mobiles=at_mobiles)
+  File "D:\project\AutomationPlatformDjango\data_monior\dataworksTableCheck\servers\blink_RT_Task.py", line 166, in run
+    jobNameList = self.listinstance()
+  File "D:\project\AutomationPlatformDjango\data_monior\dataworksTableCheck\servers\blink_RT_Task.py", line 99, in listinstance
+    response = self.client.do_action_with_exception(request)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 497, in do_action_with_exception
+    status, headers, body, exception = self._implementation_of_do_action(acs_request)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 332, in _implementation_of_do_action
+    return self._handle_retry_and_timeout(endpoint, request, signer)
+  File "D:\Python36\lib\site-packages\aliyunsdkcore\client.py", line 417, in _handle_retry_and_timeout
+    raise exception
+]|scheduled_time=2021-12-20 09:40:00+08:00

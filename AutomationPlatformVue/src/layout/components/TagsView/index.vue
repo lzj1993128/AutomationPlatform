@@ -65,8 +65,35 @@ export default {
   mounted() {
     this.initTags()
     this.addTags()
+    this.beforeUnload()
   },
   methods: {
+    beforeUnload() {
+      // 监听页面刷新
+      window.addEventListener('beforeunload', () => {
+        // visitedViews数据结构太复杂无法直接JSON.stringify处理，先转换需要的数据
+        // console.log(this.visitedViews, 'this.visitedViews')
+        const tabViews = this.visitedViews.map((item) => {
+          return {
+            fullPath: item.fullPath,
+            hash: item.hash,
+            meta: { ...item.meta },
+            name: item.name,
+            params: { ...item.params },
+            path: item.path,
+            query: { ...item.query },
+            title: item.title
+          }
+        })
+        sessionStorage.setItem('tabViews', JSON.stringify(tabViews))
+      })
+      // 页面初始化加载判断缓存中是否有数据
+      const oldViews = JSON.parse(sessionStorage.getItem('tabViews')) || []
+      // console.log(oldViews, 'this.visitedViews2')
+      if (oldViews.length > 0) {
+        this.$store.state.tagsView.visitedViews = oldViews
+      }
+    },
     isActive(route) {
       return route.path === this.$route.path
     },
